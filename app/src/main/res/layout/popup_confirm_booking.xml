@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/booking_background">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp">
+    <TextView
+        android:id="@+id/textDeskId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desk ID : 123456"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/textDesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desk 14"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:gravity="end"/>
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDesk"
+        android:text="Slot : Wed 31 May, 05:00PM-06:00PM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confrom"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>
